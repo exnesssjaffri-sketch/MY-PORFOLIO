@@ -94,8 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typingElement) {
         const roles = [
             'Web Developer',
-            'Graphic Designer',
-            'Digital Marketer',
             'Prompt Engineer'
         ];
         let roleIndex = 0;
@@ -346,6 +344,6 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('%c Built with ❤️ using HTML, CSS & JavaScript ', 'color: #94a3b8; font-size: 0.9rem;');
 
     console.log('🚀 Welcome! Let\'s build something amazing together.');
-    console.log('📧 exnesssjaffri@gmail.com');
+    console.log('📧 alijaffri4255@gmail.com');
 
 });
