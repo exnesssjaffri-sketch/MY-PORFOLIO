@@ -1,0 +1,304 @@
+files and also connect /* ============================================
+   PROFESSIONAL BACKGROUND ANIMATIONS
+   ============================================ */
+
+/* --- Fixed Background Layer --- */
+.bg-animations {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* --- Animated Gradient Orbs --- */
+.bg-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.35;
+    will-change: transform;
+    animation: orbFloat 20s ease-in-out infinite;
+}
+
+.bg-orb-1 {
+    width: 500px;
+    height: 500px;
+    top: -150px;
+    left: -100px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.6) 0%, transparent 70%);
+    animation-delay: 0s;
+}
+
+.bg-orb-2 {
+    width: 400px;
+    height: 400px;
+    top: 30%;
+    right: -150px;
+    background: radial-gradient(circle, rgba(129, 140, 248, 0.5) 0%, transparent 70%);
+    animation-delay: -5s;
+}
+
+.bg-orb-3 {
+    width: 350px;
+    height: 350px;
+    bottom: -100px;
+    left: 20%;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.5) 0%, transparent 70%);
+    animation-delay: -10s;
+}
+
+.bg-orb-4 {
+    width: 300px;
+    height: 300px;
+    top: 60%;
+    left: -80px;
+    background: radial-gradient(circle, rgba(125, 211, 252, 0.4) 0%, transparent 70%);
+    animation-delay: -15s;
+}
+
+@keyframes orbFloat {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(40px, -30px) scale(1.1);
+    }
+    50% {
+        transform: translate(-20px, 30px) scale(0.95);
+    }
+    75% {
+        transform: translate(30px, 20px) scale(1.05);
+    }
+}
+
+/* --- Animated Grid Pattern --- */
+.bg-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+    animation: gridMove 30s linear infinite;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+
+@keyframes gridMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 60px 60px;
+    }
+}
+
+/* --- Floating Geometric Shapes --- */
+.bg-shape {
+    position: absolute;
+    border: 2px solid rgba(56, 189, 248, 0.15);
+    will-change: transform;
+    animation: shapeFloat 15s ease-in-out infinite;
+}
+
+.bg-shape-1 {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 10%;
+    border-radius: 12px;
+    transform: rotate(45deg);
+    animation-delay: 0s;
+}
+
+.bg-shape-2 {
+    width: 40px;
+    height: 40px;
+    top: 70%;
+    left: 85%;
+    border-radius: 50%;
+    border-color: rgba(129, 140, 248, 0.2);
+    animation-delay: -3s;
+}
+
+.bg-shape-3 {
+    width: 30px;
+    height: 30px;
+    top: 15%;
+    right: 20%;
+    border-radius: 8px;
+    border-color: rgba(125, 211, 252, 0.2);
+    animation-delay: -6s;
+}
+
+.bg-shape-4 {
+    width: 50px;
+    height: 50px;
+    bottom: 25%;
+    left: 15%;
+    border-radius: 50%;
+    border-color: rgba(56, 189, 248, 0.15);
+    animation-delay: -9s;
+}
+
+.bg-shape-5 {
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    right: 8%;
+    border-radius: 6px;
+    transform: rotate(30deg);
+    border-color: rgba(129, 140, 248, 0.15);
+    animation-delay: -12s;
+}
+
+@keyframes shapeFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.6;
+    }
+    25% {
+        transform: translateY(-20px) rotate(10deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(10px) rotate(-5deg);
+        opacity: 0.7;
+    }
+    75% {
+        transform: translateY(-10px) rotate(5deg);
+        opacity: 0.9;
+    }
+}
+
+/* --- Particle Network Canvas --- */
+#particleCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* --- Shooting Stars --- */
+.bg-star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: var(--primary-light, #7dd3fc);
+    border-radius: 50%;
+    opacity: 0;
+    animation: starTwinkle 4s ease-in-out infinite;
+}
+
+.bg-star-1 { top: 15%; left: 20%; animation-delay: 0s; }
+.bg-star-2 { top: 30%; left: 70%; animation-delay: 0.8s; }
+.bg-star-3 { top: 55%; left: 40%; animation-delay: 1.6s; }
+.bg-star-4 { top: 75%; left: 80%; animation-delay: 2.4s; }
+.bg-star-5 { top: 10%; left: 90%; animation-delay: 3.2s; }
+.bg-star-6 { top: 65%; left: 10%; animation-delay: 1.2s; }
+.bg-star-7 { top: 40%; left: 55%; animation-delay: 2.8s; }
+.bg-star-8 { top: 85%; left: 30%; animation-delay: 0.4s; }
+
+@keyframes starTwinkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.5);
+    }
+}
+
+/* --- Shooting Star Streak --- */
+.bg-shooting-star {
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(125, 211, 252, 0.8), transparent);
+    border-radius: 2px;
+    opacity: 0;
+    transform: rotate(-35deg);
+    animation: shootingStar 8s ease-in-out infinite;
+}
+
+.bg-shooting-star-1 {
+    top: 20%;
+    left: -10%;
+    animation-delay: 2s;
+}
+
+.bg-shooting-star-2 {
+    top: 60%;
+    left: -5%;
+    animation-delay: 6s;
+}
+
+@keyframes shootingStar {
+    0% {
+        transform: translateX(0) translateY(0) rotate(-35deg);
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    15% {
+        transform: translateX(120vw) translateY(80vh) rotate(-35deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(120vw) translateY(80vh) rotate(-35deg);
+        opacity: 0;
+    }
+}
+
+/* --- Ensure content sits above background --- */
+body > *:not(.bg-animations):not(#preloader):not(#backToTop) {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Performance: Reduce animations on mobile --- */
+@media (max-width: 768px) {
+    .bg-orb {
+        filter: blur(60px);
+        opacity: 0.25;
+    }
+
+    .bg-orb-1 { width: 300px; height: 300px; }
+    .bg-orb-2 { width: 250px; height: 250px; }
+    .bg-orb-3 { width: 200px; height: 200px; }
+    .bg-orb-4 { width: 180px; height: 180px; }
+
+    .bg-shape-3,
+    .bg-shape-5 {
+        display: none;
+    }
+
+    .bg-grid {
+        background-size: 50px 50px;
+    }
+}
+
+/* --- Respect reduced motion preferences --- */
+@media (prefers-reduced-motion: reduce) {
+    .bg-orb,
+    .bg-shape,
+    .bg-star,
+    .bg-shooting-star {
+        animation: none;
+    }
+
+    .bg-grid {
+        animation: none;
+    }
+}

@@ -93,7 +93,9 @@ ul {
 }
 
 .bg-dark {
-    background-color: var(--bg-secondary);
+    background-color: rgba(30, 41, 59, 0.85);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 /* --- Preloader --- */
@@ -274,7 +276,7 @@ ul {
     align-items: center;
     position: relative;
     padding: 0 2rem;
-    background: var(--bg-primary);
+    background: transparent;
     overflow: hidden;
 }
 
@@ -500,10 +502,12 @@ ul {
 }
 
 .about-card {
-    background: var(--bg-card);
+    background: rgba(30, 41, 59, 0.9);
     padding: 2.5rem;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-color);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .about-text {
@@ -570,7 +574,7 @@ ul {
 }
 
 .skill-card {
-    background: var(--bg-card);
+    background: rgba(30, 41, 59, 0.9);
     padding: 2.5rem 2rem;
     border-radius: var(--radius-md);
     text-align: center;
@@ -578,6 +582,8 @@ ul {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .skill-card::before {
@@ -644,12 +650,14 @@ ul {
 }
 
 .service-card {
-    background: var(--bg-card);
+    background: rgba(30, 41, 59, 0.9);
     padding: 2.5rem 2rem;
     border-radius: var(--radius-md);
     text-align: center;
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .service-card:hover {
@@ -698,11 +706,13 @@ ul {
 }
 
 .project-card {
-    background: var(--bg-primary);
+    background: rgba(15, 23, 42, 0.9);
     border-radius: var(--radius-md);
     overflow: hidden;
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .project-card:hover {
@@ -828,11 +838,13 @@ ul {
 }
 
 .timeline-content {
-    background: var(--bg-card);
+    background: rgba(30, 41, 59, 0.9);
     padding: 1.8rem;
     border-radius: var(--radius-md);
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .timeline-content:hover {
@@ -866,11 +878,13 @@ ul {
 }
 
 .testimonial-card {
-    background: var(--bg-card);
+    background: rgba(30, 41, 59, 0.9);
     padding: 2rem;
     border-radius: var(--radius-md);
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .testimonial-card:hover {
@@ -931,10 +945,12 @@ ul {
     align-items: flex-start;
     gap: 1rem;
     padding: 1.2rem;
-    background: var(--bg-primary);
+    background: rgba(15, 23, 42, 0.9);
     border-radius: var(--radius-md);
     border: 1px solid var(--border-color);
     transition: var(--transition);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .contact-item:hover {
@@ -979,10 +995,12 @@ ul {
 
 /* Contact Form */
 .contact-form {
-    background: var(--bg-primary);
+    background: rgba(15, 23, 42, 0.9);
     padding: 2.5rem;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-color);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .form-group {
